@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu-latest
 
 LABEL maintainer  = "anjireddypr18@gmail.com"
 LABEL description = "Assignment from ICAV Tech"
