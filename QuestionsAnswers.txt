@@ -1,0 +1,65 @@
+General
+
+1. What is the role of AWS/Azure/GCP in DevOps?
+ 
+AWS, Azure and GCP are the cloud providers and are different types of Services like PaSS, SaaS, IaaS. and Changed the most of the industry from last decade.
+By using the above services we can leverage most of the computing resources with less cost by using Sharing concept like Public/Private cloud. 
+In devops cloud is playing good role with following  options,
+ Scaling the Production/test/develope servers on demand.
+ easy access for end-users based on their geo location
+ Automation for most of the tasks 
+ Easy backups/Access the resources.
+ 
+2. How will you approach a project that needs to implement DevOps?
+
+First we will understand the requirement  and their release management how the things  will get delivered to Customer.
+According to the requirements, we can define the delivery strategy to collaborate using different tools like , Scrumtools, kenban, source code management tools, CI/CD tools and different environments like Prod, Staging, QA, Dev to test and release in different on demand. 
+We can follow the agile model instead Waterfall, agile will focus on short term goals in particular time. And make it delivered to customer on priority base from customer requirement.
+We can use Continuous Delivery, Deployment tools liek Jenkins, GitLab, GitActions to delivery fast and release. 
+ We can use different tools for DevOps
+  Collaboration: Slack, GmailChat, skype, 
+  Project Planning: scrumtool, kenban, trello, MircroSoftAzureDevOps
+  Source Code Management: github, bitbucket, Maven,
+  Issue Tracker: GitIssues, BugCrowd, Jira
+  CI/CD : Jenkins, GitActions, Teamcity
+  Orchestration Tools:, Ansible, Chef, puppet, Terraform
+  Cloud: AWS, Azure
+
+
+
+3. Mention some of the core beneﬁts of DevOps.
+ 
+ Easy scalability of services with zero downtime 
+ Cross team learning
+ Can fix issues when we found, 
+ Instant Test result 
+ Continuous Delivery, Deployment, Communication
+ Release management easy
+ Focus on what we need in short time.
+ 
+
+4. What are the diﬀerent phases in DevOps?
+Continuous Team Collaboration
+Continuous Development
+Continuous Testing
+Continuous Integration
+Continuous Testing
+Continuous Deployment
+Continuous Monitoring
+Continuous Operations 
+ 
+5. Explain the concept of branching in Git.
+
+
+6. What is a merge conﬂict in Git, and how can it be resolved?
+
+
+Security 
+1. What is DDoS attack? How do you deal with it? 
+2. What are the beneﬁts of having Policy management? 
+3. How HTTPS is diﬀerent from HTTP? 
+4. What TCP and UDP vulnerabilities are you familiar with? 
+5. Explain OAuth 
+6. What types of ﬁrewalls are there?
+
+
