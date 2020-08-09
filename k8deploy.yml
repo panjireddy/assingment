@@ -1,20 +1,20 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
-  name: icav-assign1
+  name: icav-assign2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: icav-assign1
+      app: icav-assign2
   template:
     metadata:
       labels:
-        app: icav-assign1
+        app: icav-assign2
     spec:
       nodeSelector:
         "beta.kubernetes.io/os": linux
       containers:
-      - name: icav-assign1
+      - name: icav-assign2
         image: testreganji.azurecr.io/testreganji:latest
         
