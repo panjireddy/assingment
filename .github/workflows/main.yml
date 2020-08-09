@@ -32,12 +32,10 @@ jobs:
        
       - uses: Azure/k8s-deploy@v1
         with:
-          method: kubeconfig
-          kubeconfig: ./kubeConfig
           manifests: |
             mainfests/deployment.yml
           images: |
             testreganji.azurecr.io/testreganji:latest
-          kubectl-version: '1.16.13'
+          kubectl-version: 'latest'
         id: setcontext1 
         
