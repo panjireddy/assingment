@@ -30,7 +30,7 @@ jobs:
         id: setcontext
      
 
-      - uses: Azure/k8s-deploy
+      - uses: Azure/k8s-deploy@latest
         with:
           namespace: 'default'
           manifests: |
