@@ -15,3 +15,12 @@ jobs:
       # Use the output from the `hello` step
       - name: Get the output
         run: echo "The Result was ${{ steps.hello.outputs.res }}"
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v1
+        with:
+          username: testreganji
+          password: AaLPvnDyhzkP7pNoE=biqU0ks4tG1qFN
+          registry: testreganji.azurecr.io
+          repository: testreganji
+          tags: latest
+
