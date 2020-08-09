@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: icav-assign3
+  name: icav-assign4
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: icav-assign3
+      app: icav-assign4
   template:
     metadata:
       labels:
-        app: icav-assign3
+        app: icav-assign4
     spec:
       nodeSelector:
         "beta.kubernetes.io/os": linux
       containers:
-      - name: icav-assign3
+      - name: icav-assign4
         image: testreganji.azurecr.io/testreganji:latest
         imagePullPolicy: Never
