@@ -30,7 +30,7 @@ jobs:
         id: setcontext
       - uses: actions-hub/kubectl@master
         env:
-          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }} 
+          KUBE_CONFIG: ./kubeConfig 
         with:
          args: get pods 
 
