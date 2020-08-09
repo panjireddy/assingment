@@ -33,7 +33,7 @@ jobs:
       - uses: Azure/k8s-deploy@v1
         with:
           manifests: |
-            ./k8deploy.yml
+            mainfests/deployment.yml
           images: |
             testreganji.azurecr.io/testreganji:latest
         id: setcontext1 
