@@ -28,11 +28,7 @@ jobs:
           method: kubeconfig
           kubeconfig: ./kubeConfig  
         id: setcontext
-      - uses: actions-hub/kubectl@master
-        env:
-          KUBE_CONFIG: $HOME/.kube/config | base64 
-        with:
-          args: get pods
+     
 
       - uses: Azure/k8s-deploy@v1
         with:
