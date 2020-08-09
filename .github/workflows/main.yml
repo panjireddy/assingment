@@ -26,12 +26,12 @@ jobs:
       
       - uses: Azure/k8s-set-context@v1
         with:
-          kubeconfig: kubeConfig       
+          kubeconfig: ./kubeConfig       
 
       - uses: Azure/k8s-deploy@v1
         with:
          manifests: |
-          k8deploy.yaml
+          ./k8deploy.yaml
           
          images: |
           testreganji.azurecr.io/testreganji:latest
