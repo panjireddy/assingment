@@ -37,6 +37,6 @@ jobs:
             mainfests/deployment.yml
           images: |
             testreganji.azurecr.io/testreganji:latest
-          kubectl-version: 'latest'
+          kubectl-version: '1.18.6'
         id: setcontext1 
         
