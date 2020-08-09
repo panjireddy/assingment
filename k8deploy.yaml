@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azure-icav-assign
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: azure-icav-assign
+  template:
+    metadata:
+      labels:
+        app: azure-icav-assign
+    spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+      - name: azure-icav-assign
+        image: redis
+        ports:
+        - containerPort: 6379
+          name: redis
