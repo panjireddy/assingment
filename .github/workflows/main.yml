@@ -30,15 +30,11 @@ jobs:
           context: ""  
         id: setcontext
        
-      - uses: Azure/k8s-set-context@v1
-        with:
-          kubeconfig: ./kubeConfig       
-
       - uses: Azure/k8s-deploy@v1
         with:
-         manifests: |
-          ./k8deploy.yaml
+          manifests: |
+            ./k8deploy.yaml
           
-         images: |
-          testreganji.azurecr.io/testreganji:latest
+          images: |
+            testreganji.azurecr.io/testreganji:latest
           
