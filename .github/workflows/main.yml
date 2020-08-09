@@ -19,7 +19,7 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: testreganji
-          password: AaLPvnDyhzkP7pNoE=biqU0ks4tG1qFN
+          password: 1YGgoNgnsgw2EjuNsACXylt=8EKJ2x/r
           registry: testreganji.azurecr.io
           repository: testreganji
           tags: latest
