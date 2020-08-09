@@ -23,11 +23,17 @@ jobs:
           registry: testreganji.azurecr.io
           repository: testreganji
           tags: latest
+      - uses: azure/k8s-set-context@v1
+        with:
+          method: kubeconfig
+          kubeconfig: ./kubeConfig 
+          context: ""  
+        id: setcontext
+       
       - uses: Azure/k8s-deploy@v1
         with:
-         manifests: |
-          k8deploy.yaml
-          
-         images: |
-          testreganji.azurecr.io/testreganji:latest
-          
+          manifests: |
+            ./k8deploy.yml
+          images: |
+            testreganji.azurecr.io/testreganji:latest
+        id: setcontext1 
