@@ -34,7 +34,6 @@ jobs:
         with:
           manifests: |
             ./k8deploy.yml
-          
           images: |
             testreganji.azurecr.io/testreganji:latest
-          
+        id: setcontext1 
