@@ -32,6 +32,7 @@ jobs:
        
       - uses: Azure/k8s-deploy@v1
         with:
+          namespace: 'default'
           manifests: |
             mainfests/deployment.yml
           images: |
