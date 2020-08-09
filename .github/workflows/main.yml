@@ -26,8 +26,7 @@ jobs:
       - uses: azure/k8s-set-context@v1
         with:
           method: kubeconfig
-          kubeconfig: ./kubeConfig 
-          context: icav-cluster  
+          kubeconfig: ./kubeConfig  
         id: setcontext
        
       - uses: Azure/k8s-deploy@v1
