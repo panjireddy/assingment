@@ -16,7 +16,5 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
       - name: azure-icav-assign
-        image: redis
-        ports:
-        - containerPort: 6379
-          name: redis
+        image: testreganji.azurecr.io/icav-assign
+        
