@@ -28,6 +28,6 @@ jobs:
          manifests: |
           k8deploy.yaml
           
-        images: |
+         images: |
           testreganji.azurecr.io/testreganji:latest
           
