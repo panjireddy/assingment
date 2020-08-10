@@ -50,16 +50,68 @@ Continuous Operations
  
 5. Explain the concept of branching in Git.
 
+  Git branching is best feature for different purposes like we can maintain code bases with different features, tests, prods. We can create different branches like, stage, test, feature_<f_name>, bug_<Bug_name>
+Most of the team members are have their own branching strategies like following 
+
+Master : Production deployment should happen from this branch
+Develop: Base branch and Has pull/sart from this branch when new feature starts
+feature_<feature_name>: Has to create this feature branch from develop and develope/code the feature in this branch and raise Merge request to develop branch.
+bug_<bug_number>: If they found any issues in deployment of Prod/Stage environment, should create new branch with bugname and fix the issue and rasie the merge request to develop branch. 
+ 
+NOTE: there is no fixed strategy to use, people will use different patterns.
+
 
 6. What is a merge conﬂict in Git, and how can it be resolved?
+
+Merge conflict is an event which will trigger when git is unable to resolve the two files when merge happens. 
+Merge conflict will happen when we change content of the file in different branches and try to merge with the master branch, like the following is the example. 
+When merge conflict happens we can contact respective persons of those commits and can collaborate together and accept one change and merge with another branch. 
 
 
 Security 
 1. What is DDoS attack? How do you deal with it? 
+
+DoS is Denial of Service which will hit the service to make it busy or unavailable, and  DDOS means Distributed of DoS, huge amounts of requests come at one time to servie and which make the service down for not serving the requests anymore.
+We can do the following when we faced DDoS and to mitigate
+We have to detect the before problem becomes big by keep on monitoring logs, network resources.
+Should have strong network architecture
+Regular maintenance and logs audit 
+Attaching the security tools to detect anonymous activity. 
+
+
 2. What are the beneﬁts of having Policy management? 
+
+Using Policy management we can mostly provide authorization and give access to those who are authorized and avoid unwanted access. 
+We can differentiate different accounts like User, Shared resources and users.
+Support organizational change management efficiently through automated user-permission updates that reflect changes in users’ roles and responsibilities increase transparency of access rights, including documentation of the request and approval processes
+Prepare successfully for audits and compliance reporting with a complete audit trail
+with the Definitive Guide to Identity Governance and Administration Best Practice Processes
+
+
 3. How HTTPS is diﬀerent from HTTP? 
+
+Http and Https are web protocols to transfer the data over the network.
+Https uses encryption where http does not use encryption
+Https uses SSL data Communication where http does not use SSL.
+Https uses https:// in url and 443 as default port where http use http:// in url and 80 as default part.
+
+
 4. What TCP and UDP vulnerabilities are you familiar with? 
+These protocols exists in Transport Layer and exploiter can use the advantage of vulnerabilities in TCP/UDP and can extend to other protocols/port like 22, 443, 80 ports
+  Kind of attacks it can be lead to because of vulnerabilities are 
+ Session Hijacking: 
+ Man in middle attack:
+ Cross Site Config.
+
 5. Explain OAuth 
+
+Oauth is Authorization framework of Open standardization and will validate the access of resources and give your access  to the resources. 
+The example of Oauth is when we log into a website and it offers one or more opportunities to log on using another website’s/service’s logon like Google, Facebook. You then click on the button linked to the other website, the other website authenticates you, and the website you were originally connecting to logs you on itself afterward using permission gained from the second website.
+
 6. What types of ﬁrewalls are there?
 
+Firewalls are front fighters for access of any network resources and which will avoid malicious activity and block it, In general there are 
+Software: Its software program which need to deployed at host and will validate the incoming and outgoing traffic requests.
+Hardware: Its devices with softwares installed init and which will monitor the requests 
+Pocket filter Firewalls : each data packet consists of a header and the data it transmits. This type of firewall decides whether a packet is allowed or denied access based on the header information. To do so, it inspects the protocol, source IP address, destination IP, source port, and destination port. Depending on how the numbers match the access control list
 
